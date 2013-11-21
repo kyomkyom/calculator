@@ -37,7 +37,7 @@
 
 
 - (IBAction)equalButton_down:(id)sender;{
-//直前に押された演算子で場合分け
+    //直前に押された演算子で場合分け
     if( operation == 0){
         currentValue += [numberLabel.text intValue];
     } else if ( operation == 1){
