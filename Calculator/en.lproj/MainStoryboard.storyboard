@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uqd-RE-C8m">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uqd-RE-C8m">
                                 <rect key="frame" x="96" y="224" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="5">
@@ -22,8 +22,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="fXh-Hr-UZy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O6W-Wg-KHj">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O6W-Wg-KHj">
                                 <rect key="frame" x="164" y="224" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="6">
@@ -33,8 +36,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="Yya-jr-dv0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aHM-Et-Ci2">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aHM-Et-Ci2">
                                 <rect key="frame" x="164" y="291" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="3">
@@ -44,8 +50,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="Et8-6T-kWR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lm0-Xi-XNc">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lm0-Xi-XNc">
                                 <rect key="frame" x="96" y="291" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="2">
@@ -55,8 +64,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="DQ8-bR-ekD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1cG-rf-stU">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1cG-rf-stU">
                                 <rect key="frame" x="28" y="291" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="1">
@@ -66,6 +78,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="01W-Eq-Ter"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pt8-k0-eAM">
                                 <rect key="frame" x="232" y="358" width="60" height="60"/>
@@ -99,6 +114,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="yYA-vE-YgH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="so7-Ol-CTl">
                                 <rect key="frame" x="28" y="358" width="60" height="60"/>
@@ -110,8 +128,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="hC3-Uo-c1i"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hdX-bZ-Yfq">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hdX-bZ-Yfq">
                                 <rect key="frame" x="28" y="224" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="4">
@@ -121,8 +142,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="9f9-KJ-psC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j7o-ic-0XM">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j7o-ic-0XM">
                                 <rect key="frame" x="28" y="157" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="7">
@@ -132,8 +156,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="RNS-5o-AGZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NN9-Gp-D9Q">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NN9-Gp-D9Q">
                                 <rect key="frame" x="164" y="157" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="9">
@@ -143,8 +170,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="PYp-lj-aBx"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="djP-9u-wgZ">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="djP-9u-wgZ">
                                 <rect key="frame" x="96" y="157" width="60" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="8">
@@ -154,6 +184,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="numberButton_down:" destination="2" eventType="touchUpInside" id="517-KV-vkg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6ns-Gl-Hvu">
                                 <rect key="frame" x="232" y="224" width="60" height="60"/>
@@ -198,6 +231,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearButton_down:" destination="2" eventType="touchUpInside" id="gAr-Mt-RTi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AIQ-5d-fmg">
                                 <rect key="frame" x="37" y="32" width="246" height="50"/>
@@ -209,23 +245,8 @@
                         <color key="backgroundColor" red="0.90588241815567017" green="0.97254908084869385" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="pt8-k0-eAM" id="NJB-KJ-fMb"/>
-                        <outlet property="clearButton" destination="MPH-nu-c2a" id="TtA-VY-RZf"/>
-                        <outlet property="divideButton" destination="fuW-dx-opQ" id="dox-1O-59E"/>
-                        <outlet property="eightButton" destination="djP-9u-wgZ" id="3Db-vl-0SU"/>
-                        <outlet property="equalButton" destination="eRL-Z7-rY8" id="1x3-hN-qTK"/>
-                        <outlet property="fiveButton" destination="uqd-RE-C8m" id="L70-Ug-pjT"/>
-                        <outlet property="fourButton" destination="hdX-bZ-Yfq" id="T6u-M9-Z2J"/>
-                        <outlet property="multiplyButton" destination="6ns-Gl-Hvu" id="fE1-cq-ez7"/>
-                        <outlet property="nineButton" destination="NN9-Gp-D9Q" id="SOs-RX-G84"/>
-                        <outlet property="oneButton" destination="1cG-rf-stU" id="7P6-Au-cbk"/>
-                        <outlet property="sevenButton" destination="j7o-ic-0XM" id="0Im-0z-sMZ"/>
-                        <outlet property="sixButton" destination="O6W-Wg-KHj" id="8uR-zg-6vj"/>
-                        <outlet property="subtractButton" destination="Y6v-Cg-aaX" id="pnk-pu-BzP"/>
-                        <outlet property="threeButton" destination="aHM-Et-Ci2" id="BkV-wx-cvf"/>
-                        <outlet property="twoButton" destination="lm0-Xi-XNc" id="se6-qQ-yPO"/>
-                        <outlet property="zeroButton" destination="so7-Ol-CTl" id="Zy9-Jy-uRZ"/>
-                        <outlet property="zeroZerobutton" destination="0DK-Fm-YrE" id="9rT-ex-JZf"/>
+                        <outlet property="numberLabel" destination="AIQ-5d-fmg" id="V0R-lh-T6d"/>
+                        <outletCollection property="numberButton" destination="NN9-Gp-D9Q" id="mLa-NH-xo0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -237,23 +258,10 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="addButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="divideButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="eightButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="equalButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiveButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fourButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="multiplyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="nineButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="sevenButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="sixButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="subtractButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="threeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="zeroButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="zeroZerobutton" candidateClass="UIButton"/>
+                <relationship kind="action" name="clearButton_down:"/>
+                <relationship kind="action" name="numberButton_down:"/>
+                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="numberButton" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>
