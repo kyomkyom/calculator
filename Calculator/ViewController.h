@@ -12,10 +12,14 @@
 
     IBOutlet UILabel *numberLabel;
     IBOutletCollection(UIButton) NSArray *numberButton;
-
     BOOL startImput;
+    int currentValue;
+    int operation;
 }
 
 - (IBAction)numberButton_down:(id)sender;
 - (IBAction)clearButton_down:(id)sender;
+- (IBAction)equalButton_down:(id)sender;
+- (IBAction)opButton_down:(id)sender;
+
 @end

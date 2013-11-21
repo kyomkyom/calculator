@@ -34,15 +34,39 @@
     }
 }
 
-- (IBAction)clearButton_down:(id)sender;{
-    numberLabel.text = @"0";
+
+
+- (IBAction)equalButton_down:(id)sender;{
+//直前に押された演算子で場合分け
+    if( operation == 0){
+        currentValue += [numberLabel.text intValue];
+    } else if ( operation == 1){
+        currentValue -= [numberLabel.text intValue];
+    }
+    //表示の更新
+    numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     startImput = YES;
     
 }
 
-
-
+- (IBAction)opButton_down:(id)sender;{
+    UIButton *b = (UIButton *)sender;
     
+    //現在値の保存
+    currentValue = [numberLabel.text intValue];
+    
+    //演算の保存
+    operation = b.tag;
+    startImput = YES;
+    
+}
+
+- (IBAction)clearButton_down:(id)sender;{
+    numberLabel.text = @"0";
+    startImput = YES;
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
