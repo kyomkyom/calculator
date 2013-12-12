@@ -39,7 +39,7 @@
 - (IBAction)equalButton_down:(id)sender;{
     //直前に押された演算子で場合分け
     if( operation == 0){
-        currentValue += [numberLabel.text intValue];
+       currentValue += [numberLabel.text intValue];
     } else if ( operation == 1){
         currentValue -= [numberLabel.text intValue];
     } else if ( operation == 2){
@@ -50,16 +50,34 @@
     //表示の更新
     numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     startImput = YES;
+    currentValue = 0;
     
 }
 
 - (IBAction)opButton_down:(id)sender;{
     UIButton *b = (UIButton *)sender;
+    count += 1;
     
-    //現在値の保存
-    currentValue = [numberLabel.text intValue];
+    //現在値の保存及び演算    
     
+    if( operation == 0){
+        currentValue += [numberLabel.text intValue];
+    } else if ( operation == 1){
+        currentValue = currentValue - [numberLabel.text intValue];
+    } else if ( operation == 2){
+        if (count >= 2){
+            currentValue *= [numberLabel.text intValue];
+        } else {currentValue = [numberLabel.text intValue];
+            }
+    } else if ( operation == 3){
+        if (count >= 2){
+            currentValue /= [numberLabel.text intValue];
+        } else {currentValue = [numberLabel.text intValue];
+            }
+    }
+
     //演算の保存
+    numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     operation = b.tag;
     startImput = YES;
     
@@ -67,6 +85,8 @@
 
 - (IBAction)clearButton_down:(id)sender;{
     numberLabel.text = @"0";
+    currentValue = 0;
+    count = 0;
     startImput = YES;
 }
 

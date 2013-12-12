@@ -15,6 +15,7 @@
     BOOL startImput;
     int currentValue;
     int operation;
+    int count;
 }
 
 - (IBAction)numberButton_down:(id)sender;
