@@ -50,7 +50,8 @@
     //表示の更新
     numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     startImput = YES;
-    currentValue = 0;
+//    currentValue = 0;
+    count = 0;
     
 }
 
@@ -63,7 +64,7 @@
     if( operation == 0){
         currentValue += [numberLabel.text intValue];
     } else if ( operation == 1){
-        currentValue = currentValue - [numberLabel.text intValue];
+        currentValue -= currentValue - [numberLabel.text intValue];
     } else if ( operation == 2){
         if (count >= 2){
             currentValue *= [numberLabel.text intValue];
