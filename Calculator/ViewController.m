@@ -60,21 +60,24 @@
     count += 1;
     
     //現在値の保存及び演算    
-    
-    if( operation == 0){
-        currentValue += [numberLabel.text intValue];
-    } else if ( operation == 1){
-        currentValue -= currentValue - [numberLabel.text intValue];
-    } else if ( operation == 2){
-        if (count >= 2){
-            currentValue *= [numberLabel.text intValue];
-        } else {currentValue = [numberLabel.text intValue];
-            }
-    } else if ( operation == 3){
-        if (count >= 2){
-            currentValue /= [numberLabel.text intValue];
-        } else {currentValue = [numberLabel.text intValue];
-            }
+    if (count >= 2){
+     if( operation == 0){
+         currentValue += [numberLabel.text intValue];
+     } else if ( operation == 1){
+         currentValue -= currentValue - [numberLabel.text intValue];
+     } else if ( operation == 2){
+         if (count >= 2){
+             currentValue *= [numberLabel.text intValue];
+         } else {currentValue = [numberLabel.text intValue];
+             }
+     } else if ( operation == 3){
+         if (count >= 2){
+             currentValue /= [numberLabel.text intValue];
+         } else {currentValue = [numberLabel.text intValue];
+             }
+        }
+    } else {
+        currentValue = [numberLabel.text intValue];
     }
 
     //演算の保存
