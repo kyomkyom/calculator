@@ -42,6 +42,10 @@
         currentValue += [numberLabel.text intValue];
     } else if ( operation == 1){
         currentValue -= [numberLabel.text intValue];
+    } else if ( operation == 2){
+        currentValue *= [numberLabel.text intValue];
+    } else if ( operation == 3){
+        currentValue /= [numberLabel.text intValue];
     }
     //表示の更新
     numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
