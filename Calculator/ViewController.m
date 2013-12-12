@@ -50,8 +50,9 @@
     //表示の更新
     numberLabel.text = [NSString stringWithFormat:@"%d", currentValue];
     startImput = YES;
-//    currentValue = 0;
     count = 0;
+    currentValue = 0;
+    
     
 }
 
@@ -62,7 +63,6 @@
     //現在値の保存及び演算    
     
     if( operation == 0){
-        if ()
         currentValue += [numberLabel.text intValue];
     } else if ( operation == 1){
         currentValue -= currentValue - [numberLabel.text intValue];
@@ -84,8 +84,12 @@
     startImput = YES;
     
 }
-
 - (IBAction)clearButton_down:(id)sender;{
+    numberLabel.text = @"0";
+    startImput = YES;
+}
+
+- (IBAction)allClearbutton_down:(id)sender;{
     numberLabel.text = @"0";
     currentValue = 0;
     count = 0;

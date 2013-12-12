@@ -19,6 +19,7 @@
 }
 
 - (IBAction)numberButton_down:(id)sender;
+- (IBAction)allClearbutton_down:(id)sender;
 - (IBAction)clearButton_down:(id)sender;
 - (IBAction)equalButton_down:(id)sender;
 - (IBAction)opButton_down:(id)sender;
